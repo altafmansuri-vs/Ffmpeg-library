@@ -1,0 +1,5 @@
+# Project exclude paths
+/.gradle/
+# Project exclude paths
+/ffmpeg/build/
+/ffmpeg/build/intermediates/javac/debug/classes/
