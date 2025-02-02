@@ -9,7 +9,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="888b07ed-72d7-4d1e-8c40-7da13683d8e4" name="Changes" comment="Added ffmpeg library" />
+    <list default="true" id="888b07ed-72d7-4d1e-8c40-7da13683d8e4" name="Changes" comment="Added ffmpeg library">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,12 +57,12 @@
     &quot;assignee&quot;: &quot;altafmansuri-vs&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/altafmansuri-vs/network-library.git&quot;,
-    &quot;accountId&quot;: &quot;12f935fb-4eee-49d5-bab3-845e49b77b2c&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/altafmansuri-vs/Ffmpeg-library.git",
+    "accountId": "12f935fb-4eee-49d5-bab3-845e49b77b2c"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -90,7 +94,7 @@
   </component>
   <component name="RunManager" selected="Android App.app">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="network-library.app.main" />
+      <module name="Ffmpeg-library.app.main" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
