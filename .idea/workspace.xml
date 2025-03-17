@@ -10,10 +10,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="888b07ed-72d7-4d1e-8c40-7da13683d8e4" name="Changes" comment="Added ffmpeg library">
-      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/mobile-ffmpeg-full-gpl-4.4_LTS.aar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffmpeg/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/Doxyfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/android_lts_support.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/fftools_cmdutils.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/fftools_cmdutils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/fftools_ffmpeg.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/fftools_ffmpeg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/fftools_ffmpeg_filter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/fftools_ffmpeg_hw.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/fftools_ffmpeg_opt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/fftools_ffprobe.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/mobileffmpeg.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/mobileffmpeg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/mobileffmpeg_abidetect.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/mobileffmpeg_abidetect.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/mobileffmpeg_exception.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/mobileffmpeg_exception.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/mobileffprobe.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/cpp/mobileffprobe.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/Abi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/AbiDetect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/AsyncFFmpegExecuteTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/AsyncFFprobeExecuteTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/AsyncGetMediaInformationTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/CameraSupport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/ExecuteCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/FFmpeg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/FFmpegExecution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/FFprobe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/GetMediaInformationCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/Level.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/LogCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/LogMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/MediaInformation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/MediaInformationParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/Packages.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/Signal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/Statistics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/StatisticsCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/StreamInformation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/util/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/util/Trio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +69,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=rcify9q8ivuwlvqc)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -73,21 +119,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.network-library [assembleRelease].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Github/ffmpeg&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Upgrade Gradle wrapper.executor": "Run",
+    "Gradle.network-library [assembleRelease].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Github/ffmpeg/app/libs",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradle assembleRelease" />
@@ -181,6 +227,19 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>false</RunAsTest>
       <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Ffmpeg-library.ffmpeg.unitTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Ffmpeg-library.ffmpeg.unitTest" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
@@ -341,7 +400,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738504488351</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added ffmpeg library">
+      <option name="closed" value="true" />
+      <created>1741774602910</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1741774602911</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
