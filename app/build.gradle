@@ -1,6 +1,9 @@
 plugins {
     id 'com.android.application'
+    id 'maven-publish'
 }
+
+group = 'com.github.altafmansuri-vs'
 
 android {
     compileSdk 34
@@ -11,7 +14,6 @@ android {
         targetSdk 34
         versionCode 1
         versionName "1.0.3"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary true
@@ -26,43 +28,31 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-//            signingConfig signingConfigs.localConfig
         }
     }
-    splits {
-        abi {
-            enable true
-            reset()
-            include "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
-            universalApk false
-        }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
 }
-
-ext.abiCodes = ['x86':1, 'x86_64':2, 'armeabi-v7a':3, 'arm64-v8a':4]
-
-import com.android.build.OutputFile
-
-android.applicationVariants.all { variant ->
-    variant.outputs.each {
-        output ->
-            def baseAbiVersionCode = project.ext.abiCodes.get(output.getFilter(OutputFile.ABI))
-            output.versionCodeOverride = baseAbiVersionCode + variant.versionCode
-    }
-}
-
 
 dependencies {
-
     implementation 'androidx.core:core-ktx:1.6.0'
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation files('libs/mobile-ffmpeg-full-gpl-4.4_LTS.aar')
+//    implementation 'com.google.android.material:material:1.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
 
+afterEvaluate {
+    publishing {
+        publications {
+            mavenAar(MavenPublication) {
+                groupId = 'com.github.altafmansuri-vs'
+                artifactId = 'ffmpeg-library' // Replace with your desired artifact ID
+                version = '1.0.3'
+
+                // Tell Gradle to publish the AAR file
+                artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
+            }
+        }
+    }
 }
