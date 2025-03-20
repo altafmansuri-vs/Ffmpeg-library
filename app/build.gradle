@@ -13,7 +13,7 @@ android {
         minSdk 24
         targetSdk 34
         versionCode 1
-        versionName "1.0.3"
+        versionName "1.0.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary true
@@ -48,7 +48,7 @@ afterEvaluate {
             mavenAar(MavenPublication) {
                 groupId = 'com.github.altafmansuri-vs'
                 artifactId = 'ffmpeg-library' // Replace with your desired artifact ID
-                version = '1.0.3'
+                version = '1.0.4'
 
                 // Tell Gradle to publish the AAR file
                 artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
