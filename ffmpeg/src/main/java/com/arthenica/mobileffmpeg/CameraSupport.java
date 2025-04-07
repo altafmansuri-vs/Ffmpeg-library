@@ -17,7 +17,7 @@
  *  along with MobileFFmpeg.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.altaf.mansuri;
+package com.arthenica.mobileffmpeg;
 
 import android.content.Context;
 import android.hardware.camera2.CameraAccessException;
@@ -31,7 +31,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static android.content.Context.CAMERA_SERVICE;
-import static com.altaf.mansuri.Config.TAG;
+import static com.arthenica.mobileffmpeg.Config.TAG;
 
 /**
  * Utility class for camera devices.

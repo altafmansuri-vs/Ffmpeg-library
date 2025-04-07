@@ -5,12 +5,12 @@
 # For more details, see
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
--keep class com.altaf.mansuri.Config {
+-keep class com.arthenica.mobileffmpeg.Config {
     native <methods>;
     void log(long, int, byte[]);
     void statistics(long, int, float, float, long , int, double, double);
 }
 
--keep class com.altaf.mansuri.AbiDetect {
+-keep class com.arthenica.mobileffmpeg.AbiDetect {
     native <methods>;
 }

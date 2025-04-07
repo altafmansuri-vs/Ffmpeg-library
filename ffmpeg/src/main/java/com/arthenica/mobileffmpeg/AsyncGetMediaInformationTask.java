@@ -17,7 +17,7 @@
  * along with MobileFFmpeg.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.altaf.mansuri;
+package com.arthenica.mobileffmpeg;
 
 import android.os.AsyncTask;
 
@@ -26,7 +26,7 @@ import android.os.AsyncTask;
  *
  * @author Taner Sener
  */
-public class AsyncGetMediaInformationTask extends AsyncTask<String, com.altaf.mansuri.MediaInformation, com.altaf.mansuri.MediaInformation> {
+public class AsyncGetMediaInformationTask extends AsyncTask<String, com.arthenica.mobileffmpeg.MediaInformation, com.arthenica.mobileffmpeg.MediaInformation> {
     private final String path;
     private final GetMediaInformationCallback getMediaInformationCallback;
 
@@ -36,7 +36,7 @@ public class AsyncGetMediaInformationTask extends AsyncTask<String, com.altaf.ma
     }
 
     @Override
-    protected com.altaf.mansuri.MediaInformation doInBackground(final String... arguments) {
+    protected com.arthenica.mobileffmpeg.MediaInformation doInBackground(final String... arguments) {
         return FFprobe.getMediaInformation(path);
     }
 

@@ -9,30 +9,37 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="888b07ed-72d7-4d1e-8c40-7da13683d8e4" name="Changes" comment="Added ffmpeg aar">
-      <change afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/MyApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/migrations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/migrations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="888b07ed-72d7-4d1e-8c40-7da13683d8e4" name="Changes" comment="Added ffmpeg .so">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffmpeg/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ffmpeg/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffmpeg/consumer-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffmpeg/libs/mobile-ffmpeg-full-gpl-4.4_LTS.aar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ffmpeg/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffmpeg/src/androidTest/java/com/dch/ffmpeg/ExampleInstrumentedTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffmpeg/src/test/java/com/dch/ffmpeg/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/Abi.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/Abi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/AbiDetect.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/AbiDetect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/AsyncFFmpegExecuteTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/AsyncFFmpegExecuteTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/AsyncFFprobeExecuteTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/AsyncFFprobeExecuteTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/AsyncGetMediaInformationTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/AsyncGetMediaInformationTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/CameraSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/CameraSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/ExecuteCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/ExecuteCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/FFmpeg.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/FFmpeg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/FFmpegExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/FFmpegExecution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/FFprobe.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/FFprobe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/GetMediaInformationCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/GetMediaInformationCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/LogCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/LogCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/LogMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/LogMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/MediaInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/MediaInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/MediaInformationParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/MediaInformationParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/MyApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/Packages.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/Packages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/Signal.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/Signal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/Statistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/StatisticsCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/StatisticsCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/StreamInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/StreamInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/util/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/util/Pair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/java/com/altaf/mansuri/util/Trio.java" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/java/com/arthenica/mobileffmpeg/util/Trio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +96,7 @@
   <component name="ProjectId" id="2jjTNWPyRvVEm50utSsOl9ZJUg6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
@@ -438,7 +446,39 @@
       <option name="project" value="LOCAL" />
       <updated>1744017108601</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added ffmpeg .so">
+      <option name="closed" value="true" />
+      <created>1744020614403</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1744020614403</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added ffmpeg .so">
+      <option name="closed" value="true" />
+      <created>1744020713127</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1744020713127</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Added ffmpeg .so">
+      <option name="closed" value="true" />
+      <created>1744020835705</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1744020835705</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Added ffmpeg .so">
+      <option name="closed" value="true" />
+      <created>1744023315543</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1744023315543</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -449,6 +489,7 @@
     <MESSAGE value="Addd library" />
     <MESSAGE value="Added ffmpeg library" />
     <MESSAGE value="Added ffmpeg aar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ffmpeg aar" />
+    <MESSAGE value="Added ffmpeg .so" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ffmpeg .so" />
   </component>
 </project>

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 Taner Sener
+ * Copyright (c) 2018 Taner Sener
  *
  * This file is part of MobileFFmpeg.
  *
@@ -17,30 +17,17 @@
  *  along with MobileFFmpeg.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.altaf.mansuri;
+package com.arthenica.mobileffmpeg;
 
 /**
- * <p>Lists signals handled by MobileFFmpeg library.
+ * <p>Represents a callback function to receive statistics from running executions.
  *
  * @author Taner Sener
- * @since v4.4
+ * @since v2.1
  */
-public enum Signal {
+@FunctionalInterface
+public interface StatisticsCallback {
 
-    SIGINT(2),
-    SIGQUIT(3),
-    SIGPIPE(13),
-    SIGTERM(15),
-    SIGXCPU(24);
-
-    private int value;
-
-    Signal(int value) {
-        this.value = value;
-    }
-
-    public int getValue() {
-        return value;
-    }
+    void apply(final Statistics statistics);
 
 }

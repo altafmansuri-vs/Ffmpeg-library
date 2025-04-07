@@ -17,23 +17,29 @@
  * along with MobileFFmpeg.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.altaf.mansuri.util;
+package com.arthenica.mobileffmpeg.util;
 
-public class Pair<A, B> {
-
-    /**
-     * The first element of the pair.
-     */
-    protected A first;
+public class Trio<A, B, C> {
 
     /**
-     * The second element of the pair.
+     * The first element of the trio.
      */
-    protected B second;
+    protected final A first;
 
-    public Pair(final A first, final B second) {
+    /**
+     * The second element of the trio.
+     */
+    protected final B second;
+
+    /**
+     * The third element of the trio.
+     */
+    protected final C third;
+
+    public Trio(final A first, final B second, final C third) {
         this.first = first;
         this.second = second;
+        this.third = third;
     }
 
     public A getFirst() {
@@ -42,6 +48,10 @@ public class Pair<A, B> {
 
     public B getSecond() {
         return second;
+    }
+
+    public C getThird() {
+        return third;
     }
 
 }

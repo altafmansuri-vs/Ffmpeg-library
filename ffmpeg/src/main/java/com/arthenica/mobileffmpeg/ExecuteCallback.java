@@ -17,16 +17,24 @@
  *  along with MobileFFmpeg.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.altaf.mansuri;
+package com.arthenica.mobileffmpeg;
 
 /**
- * <p>Represents a callback function to receive asynchronous getMediaInformation result.
+ * <p>Represents a callback function to receive an asynchronous execution result.
  *
  * @author Taner Sener
+ * @since v2.1
  */
 @FunctionalInterface
-public interface GetMediaInformationCallback {
+public interface ExecuteCallback {
 
-    void apply(MediaInformation mediaInformation);
+    /**
+     * <p>Called when an asynchronous FFmpeg execution is completed.
+     *
+     * @param executionId id of the execution that completed
+     * @param returnCode  return code of the execution completed, 0 on successful completion, 255
+     *                    on user cancel, other non-zero codes on error
+     */
+    void apply(long executionId, int returnCode);
 
 }

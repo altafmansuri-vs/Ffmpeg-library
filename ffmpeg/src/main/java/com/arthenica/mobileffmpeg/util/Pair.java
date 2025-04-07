@@ -13,21 +13,35 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Lesser General Public License for more details.
  *
- *  You should have received a copy of the GNU Lesser General Public License
- *  along with MobileFFmpeg.  If not, see <http://www.gnu.org/licenses/>.
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with MobileFFmpeg.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.altaf.mansuri;
+package com.arthenica.mobileffmpeg.util;
 
-/**
- * <p>Represents a callback function to receive statistics from running executions.
- *
- * @author Taner Sener
- * @since v2.1
- */
-@FunctionalInterface
-public interface StatisticsCallback {
+public class Pair<A, B> {
 
-    void apply(final Statistics statistics);
+    /**
+     * The first element of the pair.
+     */
+    protected A first;
+
+    /**
+     * The second element of the pair.
+     */
+    protected B second;
+
+    public Pair(final A first, final B second) {
+        this.first = first;
+        this.second = second;
+    }
+
+    public A getFirst() {
+        return first;
+    }
+
+    public B getSecond() {
+        return second;
+    }
 
 }

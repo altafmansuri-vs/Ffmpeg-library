@@ -17,7 +17,7 @@
  * along with MobileFFmpeg.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.altaf.mansuri;
+package com.arthenica.mobileffmpeg;
 
 import android.os.AsyncTask;
 
@@ -78,7 +78,7 @@ public class FFmpeg {
     public static long executeAsync(final String[] arguments, final ExecuteCallback executeCallback) {
         final long newExecutionId = executionIdCounter.incrementAndGet();
 
-        com.altaf.mansuri.AsyncFFmpegExecuteTask asyncFFmpegExecuteTask = new com.altaf.mansuri.AsyncFFmpegExecuteTask(newExecutionId, arguments, executeCallback);
+        com.arthenica.mobileffmpeg.AsyncFFmpegExecuteTask asyncFFmpegExecuteTask = new com.arthenica.mobileffmpeg.AsyncFFmpegExecuteTask(newExecutionId, arguments, executeCallback);
         asyncFFmpegExecuteTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
         return newExecutionId;
@@ -95,7 +95,7 @@ public class FFmpeg {
     public static long executeAsync(final String[] arguments, final ExecuteCallback executeCallback, final Executor executor) {
         final long newExecutionId = executionIdCounter.incrementAndGet();
 
-        com.altaf.mansuri.AsyncFFmpegExecuteTask asyncFFmpegExecuteTask = new com.altaf.mansuri.AsyncFFmpegExecuteTask(newExecutionId, arguments, executeCallback);
+        com.arthenica.mobileffmpeg.AsyncFFmpegExecuteTask asyncFFmpegExecuteTask = new com.arthenica.mobileffmpeg.AsyncFFmpegExecuteTask(newExecutionId, arguments, executeCallback);
         asyncFFmpegExecuteTask.executeOnExecutor(executor);
 
         return newExecutionId;
@@ -141,7 +141,7 @@ public class FFmpeg {
     public static long executeAsync(final String command, final ExecuteCallback executeCallback) {
         final long newExecutionId = executionIdCounter.incrementAndGet();
 
-        com.altaf.mansuri.AsyncFFmpegExecuteTask asyncFFmpegExecuteTask = new com.altaf.mansuri.AsyncFFmpegExecuteTask(newExecutionId, command, executeCallback);
+        com.arthenica.mobileffmpeg.AsyncFFmpegExecuteTask asyncFFmpegExecuteTask = new com.arthenica.mobileffmpeg.AsyncFFmpegExecuteTask(newExecutionId, command, executeCallback);
         asyncFFmpegExecuteTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
         return newExecutionId;
@@ -160,7 +160,7 @@ public class FFmpeg {
     public static long executeAsync(final String command, final ExecuteCallback executeCallback, final Executor executor) {
         final long newExecutionId = executionIdCounter.incrementAndGet();
 
-        com.altaf.mansuri.AsyncFFmpegExecuteTask asyncFFmpegExecuteTask = new AsyncFFmpegExecuteTask(newExecutionId, command, executeCallback);
+        com.arthenica.mobileffmpeg.AsyncFFmpegExecuteTask asyncFFmpegExecuteTask = new AsyncFFmpegExecuteTask(newExecutionId, command, executeCallback);
         asyncFFmpegExecuteTask.executeOnExecutor(executor);
 
         return newExecutionId;

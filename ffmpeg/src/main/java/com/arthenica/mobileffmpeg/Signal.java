@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018-2020 Taner Sener
+ * Copyright (c) 2020 Taner Sener
  *
  * This file is part of MobileFFmpeg.
  *
@@ -17,24 +17,30 @@
  *  along with MobileFFmpeg.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.altaf.mansuri;
+package com.arthenica.mobileffmpeg;
 
 /**
- * <p>Represents a callback function to receive an asynchronous execution result.
+ * <p>Lists signals handled by MobileFFmpeg library.
  *
  * @author Taner Sener
- * @since v2.1
+ * @since v4.4
  */
-@FunctionalInterface
-public interface ExecuteCallback {
+public enum Signal {
 
-    /**
-     * <p>Called when an asynchronous FFmpeg execution is completed.
-     *
-     * @param executionId id of the execution that completed
-     * @param returnCode  return code of the execution completed, 0 on successful completion, 255
-     *                    on user cancel, other non-zero codes on error
-     */
-    void apply(long executionId, int returnCode);
+    SIGINT(2),
+    SIGQUIT(3),
+    SIGPIPE(13),
+    SIGTERM(15),
+    SIGXCPU(24);
+
+    private int value;
+
+    Signal(int value) {
+        this.value = value;
+    }
+
+    public int getValue() {
+        return value;
+    }
 
 }

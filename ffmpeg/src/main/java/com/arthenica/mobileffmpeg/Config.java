@@ -17,7 +17,7 @@
  *  along with MobileFFmpeg.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.altaf.mansuri;
+package com.arthenica.mobileffmpeg;
 
 import android.content.Context;
 import android.os.Build;
@@ -79,7 +79,7 @@ public class Config {
 
     private static int lastCreatedPipeIndex;
 
-    private static final List<com.altaf.mansuri.FFmpegExecution> executions;
+    private static final List<com.arthenica.mobileffmpeg.FFmpegExecution> executions;
 
     static {
 
@@ -95,7 +95,7 @@ public class Config {
                 System.loadLibrary("c++_shared");
             }
 
-            if (com.altaf.mansuri.AbiDetect.ARM_V7A.equals(com.altaf.mansuri.AbiDetect.getNativeAbi())) {
+            if (com.arthenica.mobileffmpeg.AbiDetect.ARM_V7A.equals(com.arthenica.mobileffmpeg.AbiDetect.getNativeAbi())) {
                 try {
                     System.loadLibrary("avutil_neon");
                     System.loadLibrary("swscale_neon");
@@ -128,7 +128,7 @@ public class Config {
         FFprobe.class.getName();
 
         boolean nativeMobileFFmpegLoaded = false;
-        if (!nativeFFmpegTriedAndFailed && com.altaf.mansuri.AbiDetect.ARM_V7A.equals(com.altaf.mansuri.AbiDetect.getNativeAbi())) {
+        if (!nativeFFmpegTriedAndFailed && com.arthenica.mobileffmpeg.AbiDetect.ARM_V7A.equals(com.arthenica.mobileffmpeg.AbiDetect.getNativeAbi())) {
             try {
 
                 /*
@@ -137,7 +137,7 @@ public class Config {
 
                 System.loadLibrary("mobileffmpeg_armv7a_neon");
                 nativeMobileFFmpegLoaded = true;
-                com.altaf.mansuri.AbiDetect.setArmV7aNeonLoaded(true);
+                com.arthenica.mobileffmpeg.AbiDetect.setArmV7aNeonLoaded(true);
             } catch (final UnsatisfiedLinkError e) {
                 Log.i(Config.TAG, "NEON supported armeabi-v7a mobileffmpeg library not found. Loading default armeabi-v7a library.", e);
             }
@@ -147,7 +147,7 @@ public class Config {
             System.loadLibrary("mobileffmpeg");
         }
 
-        Log.i(Config.TAG, String.format("Loaded mobile-ffmpeg-%s-%s-%s-%s.", getPackageName(), com.altaf.mansuri.AbiDetect.getAbi(), getVersion(), getBuildDate()));
+        Log.i(Config.TAG, String.format("Loaded mobile-ffmpeg-%s-%s-%s-%s.", getPackageName(), com.arthenica.mobileffmpeg.AbiDetect.getAbi(), getVersion(), getBuildDate()));
 
         /* NATIVE LOG LEVEL IS RECEIVED ONLY ON STARTUP */
         activeLogLevel = Level.from(getNativeLogLevel());
@@ -158,7 +158,7 @@ public class Config {
 
         lastCreatedPipeIndex = 0;
 
-        executions = Collections.synchronizedList(new ArrayList<com.altaf.mansuri.FFmpegExecution>());
+        executions = Collections.synchronizedList(new ArrayList<com.arthenica.mobileffmpeg.FFmpegExecution>());
     }
 
     /**
@@ -634,7 +634,7 @@ public class Config {
      * @return zero on successful execution, 255 on user cancel and non-zero on error
      */
     static int ffmpegExecute(final long executionId, final String[] arguments) {
-        final com.altaf.mansuri.FFmpegExecution currentFFmpegExecution = new com.altaf.mansuri.FFmpegExecution(executionId, arguments);
+        final com.arthenica.mobileffmpeg.FFmpegExecution currentFFmpegExecution = new com.arthenica.mobileffmpeg.FFmpegExecution(executionId, arguments);
         executions.add(currentFFmpegExecution);
 
         try {

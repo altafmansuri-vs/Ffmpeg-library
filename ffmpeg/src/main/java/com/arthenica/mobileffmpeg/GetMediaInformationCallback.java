@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 Taner Sener
+ * Copyright (c) 2018-2020 Taner Sener
  *
  * This file is part of MobileFFmpeg.
  *
@@ -17,37 +17,16 @@
  *  along with MobileFFmpeg.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.altaf.mansuri;
-
-import java.util.Date;
+package com.arthenica.mobileffmpeg;
 
 /**
- * <p>Represents an ongoing FFmpeg execution.
+ * <p>Represents a callback function to receive asynchronous getMediaInformation result.
  *
  * @author Taner Sener
- * @since v4.4
  */
-public class FFmpegExecution {
-    private final Date startTime;
-    private final long executionId;
-    private final String command;
+@FunctionalInterface
+public interface GetMediaInformationCallback {
 
-    public FFmpegExecution(final long executionId, final String[] arguments) {
-        this.startTime = new Date();
-        this.executionId = executionId;
-        this.command = FFmpeg.argumentsToString(arguments);
-    }
-
-    public Date getStartTime() {
-        return startTime;
-    }
-
-    public long getExecutionId() {
-        return executionId;
-    }
-
-    public String getCommand() {
-        return command;
-    }
+    void apply(MediaInformation mediaInformation);
 
 }
