@@ -1,58 +1,44 @@
-plugins {
-    id 'com.android.library'
-    id 'maven-publish'
-}
-
-group = 'com.github.altafmansuri-vs' // Your GitHub username
+apply plugin: 'com.android.library'
 
 android {
-    namespace 'com.dch.ffmpeg'
-    compileSdk 34
+    compileSdkVersion 31
+    ndkVersion "21.3.6528147"
 
     defaultConfig {
-        minSdk 24
-        targetSdk 34
+        minSdkVersion 24
+        targetSdkVersion 31
         versionCode 1
-        versionName "1.0.6"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
+        versionName "1.0.7"
+        project.archivesBaseName = "mobile-ffmpeg"
+        consumerProguardFiles 'proguard-rules.pro'
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
     }
 
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+task javadoc(type: Javadoc) {
+    title = 'MobileFFmpeg'
+    destinationDir = file("${projectDir}/../../docs/android/javadoc")
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    source = android.sourceSets.main.java.srcDirs
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.7.0'
-
-    implementation files('libs/mobile-ffmpeg-full-gpl-4.4_LTS.aar')
-
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
-}
-
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                groupId = 'com.github.altafmansuri-vs'
-                artifactId = 'ffmpeg-library'
-                version = '1.0.6'
-            }
-        }
-    }
+    testImplementation "androidx.test.ext:junit:1.1.1"
+    testImplementation "org.json:json:20190722"
 }

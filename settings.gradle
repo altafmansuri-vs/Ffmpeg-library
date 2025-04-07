@@ -1,13 +1,10 @@
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
-        flatDir {
-            dirs 'libs'
-        }
+        jcenter() // Warning: this repository is going to shut down soon
     }
 }
 rootProject.name = "Ffmpeg-library"
-include ':app'
-include ':ffmpeg'
+include ':app', ':ffmpeg'
