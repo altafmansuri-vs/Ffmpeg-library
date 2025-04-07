@@ -10,17 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="888b07ed-72d7-4d1e-8c40-7da13683d8e4" name="Changes" comment="Added ffmpeg aar">
-      <change afterPath="$PROJECT_DIR$/ffmpeg/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ffmpeg/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ffmpeg/consumer-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ffmpeg/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ffmpeg/src/androidTest/java/com/dch/ffmpeg/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ffmpeg/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ffmpeg/src/test/java/com/dch/ffmpeg/ExampleUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/libs/mobile-ffmpeg-full-gpl-4.4_LTS.aar" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/libs/mobile-ffmpeg-full-gpl-4.4_LTS.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -403,7 +394,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742467969968</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added ffmpeg aar">
+      <option name="closed" value="true" />
+      <created>1744015395043</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1744015395043</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added ffmpeg aar">
+      <option name="closed" value="true" />
+      <created>1744016333697</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1744016333697</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
