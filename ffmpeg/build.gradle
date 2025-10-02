@@ -4,18 +4,19 @@ plugins {
 }
 
 android {
-    compileSdkVersion 36
+    // Use a stable SDK version instead of 36
+    compileSdkVersion 34
     namespace "com.pub.secure"
 
     defaultConfig {
         minSdkVersion 24
-        targetSdkVersion 36
+        targetSdkVersion 34
         versionCode 1
-        versionName "1.1.4"
+        versionName "1.1.5"
         project.archivesBaseName = "mobile-ffmpeg"
         consumerProguardFiles 'proguard-rules.pro'
 
-        // Add these for 16KB page size support
+        // Configuration for native (C++) support
         ndk {
             // Specify ABIs you want to support
             abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86', 'x86_64'
@@ -43,7 +44,7 @@ android {
         }
     }
 
-    // Add packaging options for 16KB page size compatibility
+    // Packaging options for 16KB page size compatibility
     packagingOptions {
         jniLibs {
             useLegacyPackaging = true
@@ -66,6 +67,43 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    // Add this to explicitly define the component
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+}
+
+// --- JITPACK FIX: PUBLICATION CONFIGURATION ---
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = 'com.github.altafmansuri-vs'
+                artifactId = 'Ffmpeg-library'
+                version = android.defaultConfig.versionName
+
+                // CORRECTED: Use the bundleReleaseAar task output
+                artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
+
+                // Add pom.xml dependencies
+                pom.withXml {
+                    def dependenciesNode = asNode().appendNode('dependencies')
+
+                    // Add your dependencies here if needed
+                    // Example:
+                    /*
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', 'androidx.appcompat')
+                    dependencyNode.appendNode('artifactId', 'appcompat')
+                    dependencyNode.appendNode('version', '1.6.1')
+                    */
+                }
+            }
+        }
+    }
 }
 
 task javadoc(type: Javadoc) {
