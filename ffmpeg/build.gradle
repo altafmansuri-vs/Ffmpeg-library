@@ -45,11 +45,24 @@ android {
     // Packaging options for 16KB page size compatibility
     packagingOptions {
         jniLibs {
-            useLegacyPackaging = true
+            useLegacyPackaging = false // Change to false for proper alignment
+            pickFirsts += ['**/libavcodec.so', '**/libavformat.so', '**/libavutil.so', '**/libswresample.so', '**/libswscale.so']
         }
         resources {
-            excludes += ['**/libmobile-ffmpeg.so']
+            excludes += ['**/libmobile-ffmpeg.so', '**/libavcodec.so', '**/libavformat.so']
+            merges += ['**/libavcodec.so'] // Force merge to handle alignment
         }
+
+        // Explicitly specify which libraries to keep and how to handle them
+        pickFirst '**/libavcodec.so'
+        pickFirst '**/libavformat.so'
+        pickFirst '**/libavutil.so'
+        pickFirst '**/libswresample.so'
+        pickFirst '**/libswscale.so'
+
+        // Exclude duplicate files
+        exclude '**/libavcodec.so'
+        exclude '**/libavformat.so'
     }
 
     // Enable NDK version specification

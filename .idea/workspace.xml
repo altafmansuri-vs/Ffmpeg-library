@@ -519,7 +519,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759396392178</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Added ffmpeg .so">
+      <option name="closed" value="true" />
+      <created>1759397925932</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1759397925932</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Added ffmpeg .so">
+      <option name="closed" value="true" />
+      <created>1759398974879</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1759398974879</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
