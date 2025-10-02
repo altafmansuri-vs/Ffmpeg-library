@@ -1,7 +1,7 @@
-plugins {
-    id 'com.android.library'
-    id 'maven-publish'
-}
+// Apply the Android Library plugin
+apply plugin: 'com.android.library'
+// Apply the Maven Publishing plugin
+apply plugin: 'maven-publish'
 
 android {
     compileSdk 34
@@ -66,12 +66,56 @@ android {
     }
 }
 
+// ----------------------------------------------------------------------
+// Configuration for JitPack / Maven Publishing
+// ----------------------------------------------------------------------
+
+// Capture the JAR and Javadoc tasks for publishing metadata (optional but recommended)
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    archiveClassifier.set('sources')
+}
+
 task javadoc(type: Javadoc) {
     title = 'MobileFFmpeg'
+    // ... existing Javadoc configuration
     destinationDir = file("${projectDir}/../../docs/android/javadoc")
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
     source = android.sourceSets.main.java.srcDirs
 }
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    archiveClassifier.set('javadoc')
+    from javadoc.destinationDir
+}
+
+// JitPack Fix: Explicitly define the publishing artifacts and their paths
+publishing {
+    publications {
+        aar(MavenPublication) {
+            groupId = 'com.pub.secure'
+            artifactId = 'mobile-ffmpeg'
+            version = '1.0.0' // JitPack will use the Git tag
+
+            // CRITICAL FIX: Explicitly add the AAR artifact.
+            // This is the reliable way to provide the artifact without using the problematic 'components.release'.
+            artifact("$buildDir/outputs/aar/${project.name}-release.aar")
+
+            // Attach sources and javadoc
+            artifact sourcesJar
+            artifact javadocJar
+
+            // CRITICAL FIX 2: Explicitly set the POM path to help JitPack find it
+            // We use the artifactId and version to form the final name
+            pom.withXml {
+                def name = "mobile-ffmpeg"
+                def pomPath = "${project.buildDir}/publications/aar/${name}-${version}.pom"
+                destination = file(pomPath)
+            }
+        }
+    }
+}
+
 
 dependencies {
     testImplementation "androidx.test.ext:junit:1.1.1"
