@@ -3,12 +3,14 @@ plugins {
 }
 
 android {
-    compileSdk 31
+
+    compileSdkVersion 36
+    namespace "com.arthenica.mobileffmpeg"
 
     defaultConfig {
         applicationId "com.arthenica.mobileffmpeg"
-        minSdk 24
-        targetSdk 31
+        minSdkVersion 24
+        targetSdkVersion 36
         versionCode 1
         versionName "1.0.9"
 
