@@ -11,7 +11,7 @@ android {
         minSdkVersion 24
         targetSdkVersion 34
         versionCode 1
-        versionName "1.1.6"
+        versionName "1.1.8"
         // This sets the base name for outputs
         archivesBaseName = "mobile-ffmpeg"
         consumerProguardFiles 'proguard-rules.pro'
@@ -44,10 +44,15 @@ android {
 
     // Packaging options for 16KB page size compatibility
     packagingOptions {
+//        jniLibs {
+//            useLegacyPackaging = false // Change to false for proper alignment
+//            pickFirsts += ['**/libavcodec.so', '**/libavformat.so', '**/libavutil.so', '**/libswresample.so', '**/libswscale.so']
+//        }
+
         jniLibs {
-            useLegacyPackaging = false // Change to false for proper alignment
-            pickFirsts += ['**/libavcodec.so', '**/libavformat.so', '**/libavutil.so', '**/libswresample.so', '**/libswscale.so']
+            useLegacyPackaging = true
         }
+
         resources {
             excludes += ['**/libmobile-ffmpeg.so', '**/libavcodec.so', '**/libavformat.so']
             merges += ['**/libavcodec.so'] // Force merge to handle alignment
