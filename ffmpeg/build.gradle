@@ -6,27 +6,15 @@ plugins {
 android {
     compileSdkVersion 34
     namespace "com.pub.secure"
+    ndkVersion "22.1.7171670"
 
     defaultConfig {
         minSdkVersion 24
         targetSdkVersion 34
-        versionCode 1
-        versionName "1.1.8"
         // This sets the base name for outputs
         archivesBaseName = "mobile-ffmpeg"
         consumerProguardFiles 'proguard-rules.pro'
-
-        ndk {
-            abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86', 'x86_64'
-        }
-
-        externalNativeBuild {
-            cmake {
-                cppFlags "-std=c++17 -fPIC"
-                arguments "-DANDROID_PLATFORM=android-21",
-                        "-DANDROID_STL=c++_shared"
-            }
-        }
+        
     }
 
     buildTypes {
@@ -41,37 +29,6 @@ android {
             jniLibs.srcDirs = ['src/main/jniLibs']
         }
     }
-
-    // Packaging options for 16KB page size compatibility
-    packagingOptions {
-//        jniLibs {
-//            useLegacyPackaging = false // Change to false for proper alignment
-//            pickFirsts += ['**/libavcodec.so', '**/libavformat.so', '**/libavutil.so', '**/libswresample.so', '**/libswscale.so']
-//        }
-
-        jniLibs {
-            useLegacyPackaging = true
-        }
-
-        resources {
-            excludes += ['**/libmobile-ffmpeg.so', '**/libavcodec.so', '**/libavformat.so']
-            merges += ['**/libavcodec.so'] // Force merge to handle alignment
-        }
-
-        // Explicitly specify which libraries to keep and how to handle them
-        pickFirst '**/libavcodec.so'
-        pickFirst '**/libavformat.so'
-        pickFirst '**/libavutil.so'
-        pickFirst '**/libswresample.so'
-        pickFirst '**/libswscale.so'
-
-        // Exclude duplicate files
-        exclude '**/libavcodec.so'
-        exclude '**/libavformat.so'
-    }
-
-    // Enable NDK version specification
-    ndkVersion "25.1.8937393"
 
     testOptions {
         unitTests.returnDefaultValues = true

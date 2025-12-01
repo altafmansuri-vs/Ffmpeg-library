@@ -10,10 +10,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="888b07ed-72d7-4d1e-8c40-7da13683d8e4" name="Changes" comment="Added ffmpeg .so">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ffmpeg/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libavcodec.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libavcodec.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libavdevice.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libavfilter.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libavfilter.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libavformat.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libavformat.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libavutil.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libavutil.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libc++_shared.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libmobileffmpeg.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libmobileffmpeg_abidetect.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libswresample.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libswresample.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libswscale.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/arm64-v8a/libswscale.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libavcodec.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libavcodec.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libavcodec_neon.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libavdevice.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libavdevice_neon.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libavfilter.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libavfilter.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libavfilter_neon.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libavformat.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libavformat.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libavformat_neon.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libavutil.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libavutil.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libavutil_neon.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libc++_shared.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libmobileffmpeg.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libmobileffmpeg_abidetect.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libmobileffmpeg_armv7a_neon.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libswresample.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libswresample.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libswresample_neon.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libswscale.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libswscale.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/armeabi-v7a/libswscale_neon.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86/libavcodec.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86/libavdevice.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86/libavfilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86/libavformat.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86/libavutil.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86/libc++_shared.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86/libmobileffmpeg.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86/libmobileffmpeg_abidetect.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86/libswresample.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86/libswscale.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libavcodec.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libavcodec.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libavdevice.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libavfilter.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libavfilter.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libavformat.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libavformat.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libavutil.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libavutil.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libc++_shared.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libmobileffmpeg.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libmobileffmpeg_abidetect.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libswresample.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libswresample.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libswscale.so" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg/src/main/jniLibs/x86_64/libswscale.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +111,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/altafmansuri-vs/Ffmpeg-library.git&quot;,
-    &quot;accountId&quot;: &quot;12f935fb-4eee-49d5-bab3-845e49b77b2c&quot;
+    &quot;accountId&quot;: &quot;57990330-6fca-42f2-9037-a7e8e1a913c2&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -74,6 +124,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;AnalyzeApkAction.lastApkPath&quot;: &quot;/Users/mac/Github/Ffmpeg-library/app/build/outputs/apk/debug/app-debug.apk&quot;,
     &quot;Android App.app.executor&quot;: &quot;Run&quot;,
     &quot;BundleExportedModule&quot;: &quot;Ffmpeg-library.app&quot;,
     &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
